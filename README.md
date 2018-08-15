@@ -124,7 +124,7 @@ Difficulty: ⭐⭐⭐
 > Topic: **Git**  
 Difficulty: ⭐⭐⭐
 
-Luồng làm việc Gitflow sử dụng hai nhánh _dài hạn_ để lưu lịch sử của project là `master` và `develop`:
+Luồng làm việc Gitflow sử dụng hai nhánh chạy song song _dài hạn_ để lưu lịch sử của project là `master` và `develop`:
 
   * **Master** \- luôn sẵn sàng để được phát hành trên LIVE, với mọi thứ được kiểm tra và  phê duyệt đầy đủ (sẵn sàng cho production).
 
