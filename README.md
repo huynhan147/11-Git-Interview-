@@ -35,7 +35,7 @@ Difficulty: ⭐⭐
 Nói một cách đơn giản, `git pull` thực hiện một `git fetch` theo sau là một `git
 merge`.
 
-  * Khi bạn sử dụng `pull`, Git sẽ cố gắng tự động thực hiện công việc cho bạn. **Đó là ngữ cảnh nhạy cảm**, do đó Git sẽ merge mọi commit được pull vào nhánh bạn đang làm việc. `pull` **tự động hợp nhất các commit mà không cho phép bạn xem chúng trước**. Nếu bạn không quản lý chặt chẽ các nhánh của mình, bạn có thể gặp phải conflicts thường xuyên.
+  * Khi bạn sử dụng `pull`, Git sẽ cố gắng tự động thực hiện công việc cho bạn. **Tùy theo từng hoàn cảnh**,Git sẽ merge mọi commit được pull vào nhánh bạn đang làm việc. `pull` **tự động gộp các commit mà bạn sẽ không cần phải review trước**. Nếu bạn không quản lý chặt chẽ các nhánh của mình, bạn có thể gặp phải các xung đột thường xuyên.
 
   * Khi bạn `fetch`, Git sẽ thu thập bất kỳ commit nào mà từ nhánh chỉ định mà không có trong branch hiện tại của bạn và **lưu nó trong repository trên local của bạn**. Tuy nhiên, **nó không merge chúng với nhánh hiện tại của bạn**. Điều này đặc biệt hữu ích nếu bạn cần cập nhật repository của bạn, nhưng những thứ đang làm việc có thể bị hỏng nếu bạn cập nhật các file của mình. Để tích hợp các commit vào nhánh master của bạn, bạn sử dụng `merge`.
 
