@@ -37,7 +37,7 @@ merge`.
 
   * Khi bạn sử dụng `pull`, Git sẽ cố gắng tự động thực hiện công việc cho bạn. **Đó là ngữ cảnh nhạy cảm**, do đó Git sẽ merge mọi commit được pull vào nhánh bạn đang làm việc. `pull` **tự động hợp nhất các commit mà không cho phép bạn xem chúng trước**. Nếu bạn không quản lý chặt chẽ các nhánh của mình, bạn có thể gặp phải conflicts thường xuyên.
 
-  * Khi bạn `fetch`, Git sẽ thu thập bất kỳ commit nào mà từ nhánh chỉ định mà không có trong branch hiện tại của bạn và **lưu nó trong repository trên local của bạn**. Tuy nhiên, **nó không merge chúng với nhánh hiện tại của bạn**. Điều này đặc biệt hữu ích nếu bạn cần cập nhật repository của bạn, nhưng những thứ đang làm việc có thể bị hỏng nếu bạn cập nhật các file của mình. Để tích hợp các commit vào nhánh master của bạn, bạn sử dụng `merge`.
+  * Khi bạn `fetch`, Git sẽ thu thập bất kỳ commit nào mà từ nhánh chỉ định mà không có trong nhánh hiện tại của bạn và **lưu nó trong repository trên local của bạn**. Tuy nhiên, **nó không merge chúng với nhánh hiện tại của bạn**. Điều này đặc biệt hữu ích nếu bạn cần cập nhật repository của bạn, nhưng những thứ đang làm việc có thể bị hỏng nếu bạn cập nhật các file của mình. Để tích hợp các commit vào nhánh master của bạn, bạn sử dụng `merge`.
 
 **Source:** [stackoverflow.com](https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch)
 
@@ -82,7 +82,7 @@ Khi bạn thực hiện `git status`,bạn sẽ thấy các file cùng với ind
 > Topic: **Git**  
 Difficulty: ⭐⭐⭐
 
-Câu lệnh git _cherry-pick_ thường được sử dụng để chỉ các commit cụ thể từ một nhánh trong một repository trên một nhánh khác. Thường được sử dụng để chuyển tiếp hoặc back-port các commit từ nhánh bảo trì đến nhánh phát triển.
+Câu lệnh git _cherry-pick_ thường được sử dụng để chèn các commit cụ thể từ một nhánh trong một repository vào một nhánh khác. Thường được sử dụng để chuyển tiếp hoặc back-port các commit từ nhánh bảo trì đến nhánh phát triển.
 
 
 Điều này trái ngược với các cách khác như merge hay rebase mà thường được áp dụng cho nhiều commit vào 1 nhánh khác.
@@ -100,7 +100,7 @@ Câu lệnh git _cherry-pick_ thường được sử dụng để chỉ các co
 Difficulty: ⭐⭐⭐
 
 **Forking Workflow** về cơ bản sẽ khác với các luồng làm việc Git khác. Thay vì sử dụng một repository duy nhất phia server để hoạt động như một
-"trung tâm" codebase, nó cung cấp cho mỗi developer một repository phía server riêng của họ. "Forking Workflow" thường thấy nhất trong các dự án open soure công khai.
+"trung tâm" codebase, nó cung cấp cho mỗi developer một repository phía server riêng của họ. "Forking Workflow" thường thấy nhất trong các dự án open source công khai.
 
 Ưu điểm chính của Forking Workflow là các đóng góp có thể được tích hợp mà không cần mọi người push vào một repository trung tâm duy nhất giúp lịch sử commit của dự án được sạch sẽ. Các developer sẽ push lên các repository phía server của họ, và chỉ người bảo trì dự án có thể push lên repository chính.
 
